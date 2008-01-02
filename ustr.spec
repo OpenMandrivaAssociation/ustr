@@ -22,7 +22,7 @@
 
 Name: ustr
 Version: 1.0.2
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
 License: MIT or LGPLv2+ or BSD
@@ -102,7 +102,7 @@ Static library for the debug build of the Ustr string library.
 %setup -q
 
 %build
-%{make} all-shared CFLAGS="%{optflags}" %{policy_cflags}
+%{make} all-shared CFLAGS="%{optflags} -fPIC" %{policy_cflags}
 
 %check
 %{make} check %{policy_cflags}
