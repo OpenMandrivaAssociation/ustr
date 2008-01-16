@@ -18,16 +18,16 @@
 %define policy_cflags_broken %{nil}
 %endif
 
-%define policy_cflags %{policy_cflags_hide}  %{policy_cflags_broken}
+%define policy_cflags %{policy_cflags_hide} %{policy_cflags_broken}
 
 Name: ustr
-Version: 1.0.2
-Release: %mkrel 2
+Version: 1.0.3
+Release: %mkrel 1
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
 License: MIT or LGPLv2+ or BSD
 URL: http://www.and.org/ustr/
-Source0: http://www.and.org/ustr/%{version}/%{name}-%{version}.tar.gz
+Source0: http://www.and.org/ustr/%{version}/%{name}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 # BuildRequires: make gcc sed
 
