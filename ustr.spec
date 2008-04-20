@@ -21,7 +21,7 @@
 %define policy_cflags %{policy_cflags_hide} %{policy_cflags_broken}
 
 Name: ustr
-Version: 1.0.3
+Version: 1.0.4
 Release: %mkrel 1
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
