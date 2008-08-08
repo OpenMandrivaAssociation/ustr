@@ -22,7 +22,7 @@
 
 Name: ustr
 Version: 1.0.4
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
 License: MIT or LGPLv2+ or BSD
