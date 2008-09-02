@@ -52,6 +52,7 @@ This package also distributes pre-built shared libraries.
 Summary: Development files for %{name}
 Group: Development/C
 Provides: %{name}-devel = %{version}-%{release}
+Requires: %libname = %version-%release
 
 %description -n %{libnamedevel}
 Header files for the Ustr string library, and the .so to link with.
@@ -64,6 +65,7 @@ Summary: Static development files for %{name}
 Group: Development/C
 Provides: %{name}-static-devel = %{version}-%{release}
 Requires: %{name}-devel = %{version}-%{release}
+Requires: %libnamedevel = %version-%release
 
 %description -n %{libnamestaticdevel}
 Static library for the Ustr string library.
