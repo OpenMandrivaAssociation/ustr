@@ -166,3 +166,90 @@ rm -rf $RPM_BUILD_ROOT
 %files -n %{mklibname %{name}}-debug-static-devel
 %{_libdir}/libustr-debug.a
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.0.4-3mdv2010.0
++ Revision: 434591
+- rebuild
+
+  + Götz Waschk <waschk@mandriva.org>
+    - fix devel deps
+
+* Fri Aug 08 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.0.4-2mdv2009.0
++ Revision: 269452
+- rebuild early 2009.0 package (before pixel changes)
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+* Mon Apr 21 2008 David Walluck <walluck@mandriva.org> 1.0.4-1mdv2009.0
++ Revision: 196077
+- 1.0.4
+
+* Wed Jan 16 2008 David Walluck <walluck@mandriva.org> 1.0.3-1mdv2008.1
++ Revision: 153835
+- 1.0.3
+
+* Wed Jan 02 2008 David Walluck <walluck@mandriva.org> 1.0.2-2mdv2008.1
++ Revision: 140296
+- build with -fPIC
+
+* Wed Jan 02 2008 David Walluck <walluck@mandriva.org> 1.0.2-1mdv2008.1
++ Revision: 140274
+- import ustr
+
+
+* Tue Oct 30 2007 James Antill <james@and.org> - 1.0.2-2
+- Build new upstream in Fedora
+
+* Mon Oct 29 2007 James Antill <james@and.org> - 1.0.2-1
+- New release
+
+* Tue Aug 28 2007 James Antill <jantill@redhat.com> - 1.0.1-6
+- Add options for fedora policy brokeness, so it's easy to undo.
+- Rebuild for buildid.
+
+* Wed Aug  8 2007 James Antill <james@and.org> - 1.0.1-5
+- Import fix for ustr-import, wrt. repl <=> replace
+
+* Sun Aug  5 2007 James Antill <james@and.org> - 1.0.1-4
+- Patches for minor GIT HEAD documentation fixes.
+- Install mkdir_p and fgrep examples.
+
+* Sat Aug  4 2007 James Antill <james@and.org> - 1.0.1-2
+- First upload to Fedora repos.
+
+* Fri Aug  3 2007 James Antill <james@and.org> - 1.0.1-0.10.fc7
+- Re-fix dups in -devel and -debug file lists.
+- Change license to new format
+
+* Thu Aug  2 2007 James Antill <james@and.org> - 1.0.1-0.9.fc7
+- Fix dups in -devel and -debug file lists.
+
+* Wed Aug  1 2007 James Antill <james@and.org> - 1.0.1-0.8.fc7
+- Required to make DBG_ONLY_BAD_POLICIES_HAVE_THIS_EMPTY_CFLAGS empty
+- due to so called "review"
+
+* Fri Jul 27 2007 James Antill <james@and.org> - 1.0.1-0.2.fc7
+- Next test release of 1.0.1, lots of fixes from Fedora review.
+
+* Wed Jul 25 2007 James Antill <james@and.org> - 1.0.1-0
+- Test release of 1.0.1.
+
+* Wed Jul 11 2007 James Antill <james@and.org> - 1.0.0-1
+- Upgrade to 1.0.0
+- Minor fixes on specfile
+
+* Sun Jun  3 2007 James Antill <james@and.org> - 0.99.2-1
+- Upgrade to 0.99.2
+
+* Thu May 24 2007 James Antill <james@and.org> - 0.99.1-2
+- Fix ver typo to be version.
+
+* Fri May 18 2007 James Antill <james@and.org> - 0.99.1-1
+- Use all-shared to get GCC-ish specific shared libs.
+
+* Mon May 14 2007 James Antill <james@and.org> - 0.98.1-0
+- Initial spec
+
