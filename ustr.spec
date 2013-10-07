@@ -1,4 +1,6 @@
-%define libname %{mklibname %{name} 1}
+%define major 1
+%define api 1.0
+%define libname %{mklibname %{name} %{api} %{major}}
 %define libnamedevel %{mklibname %{name} -d}
 %define libnamestaticdevel %{mklibname %{name} -d -s}
 
@@ -22,7 +24,7 @@
 
 Name: ustr
 Version: 1.0.4
-Release: %mkrel 3
+Release: 4
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
 License: MIT or LGPLv2+ or BSD
@@ -110,27 +112,7 @@ Static library for the debug build of the Ustr string library.
 %{make} check %{policy_cflags}
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %{makeinstall} LDCONFIG=/bin/true HIDE=
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%post -n %{libname}-debug -p /sbin/ldconfig
-%endif
-
-%if %mdkversion < 200900
-%postun -n %{libname}-debug -p /sbin/ldconfig
-%endif
 
 %files -n %{libname}
 %defattr(-,root,root,-)
