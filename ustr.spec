@@ -30,7 +30,7 @@
 
 Name: ustr
 Version: 1.0.4
-Release: 10
+Release: 11
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
 License: MIT or LGPLv2+ or BSD
