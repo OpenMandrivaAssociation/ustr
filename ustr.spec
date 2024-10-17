@@ -34,7 +34,7 @@ Release: 11
 Summary: String library, very low memory overhead, simple to import
 Group: System/Libraries
 License: MIT or LGPLv2+ or BSD
-URL: http://www.and.org/ustr/
+URL: https://www.and.org/ustr/
 Source0: http://www.and.org/ustr/%{version}/%{name}-%{version}.tar.bz2
 ## Everybody uses this patch.
 Patch0: ustr-1.0.4-c99-inline.patch
