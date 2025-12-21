@@ -41,6 +41,7 @@ Patch0: ustr-1.0.4-c99-inline.patch
 Patch1: ustr-1.0.4-ustrp_utf8_valid.patch
 # BuildRequires: make gcc sed
 
+BuildRequires:	make
 %description
 Micro string library, very low overhead from plain strdup() (Ave. 44% for
 0-20B strings). Very easy to use in existing C code. At it's simplest you can
